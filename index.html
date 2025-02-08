@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+</head>
+<body style="background-color: white;">
+    <div id="format" style="display: grid; grid-template-columns: 150px 800px;">
+        <div id="menu" style="margin: auto;">
+            <label id="gen" style="margin-left: 10px; font-size: large;">Generations: 0</label>
+            <button id="step" style="width: 50px; padding: 10px; margin: 10px; cursor: pointer; margin-top: 50px;">Next</button>
+            <button id="go" style="width: 50px; padding: 10px; margin: 10px; cursor: pointer;">Go</button>
+            <button id="stop" style="width: 50px; padding: 10px; margin: 10px; margin-bottom: 15px; cursor: pointer; margin-bottom: 50px;">Stop</button>
+            <label style="margin-left: 10px;">Resolution</label>
+            <input id="res" type="range" min="1" max="12" value="12" class="slider">
+            <button id="random" style="padding: 10px; margin: 10px; cursor: pointer;">Randomize</button>
+            <button id="clear" style="padding: 10px; margin: 10px; cursor: pointer;">Clear</button>
+        </div>
+        <canvas id="canvas" style="border: 2px solid rgb(83, 83, 83);"></canvas>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
